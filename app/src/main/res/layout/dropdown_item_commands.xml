@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:paddingVertical="@dimen/_9sdp"
+    android:layout_toEndOf="@id/viewlineBlue"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:fontFamily="@font/mono_regular"
+    android:text="@string/git_checkout_b_new_name"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_14sdp"
+    android:textStyle="bold" />

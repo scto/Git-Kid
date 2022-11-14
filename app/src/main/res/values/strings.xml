@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">gitkid</string>
+    <string name="command">Kid</string>
+    <string name="git">Git</string>
+    <string name="major_git_commands">Major Git Commands</string>
+    <string name="three_dot">...</string>
+    <string name="git_checkout_b_new_name"><![CDATA[git checkout -b <new name>]]></string>
+    <string name="note">Note</string>
+    <string name="usage">Usage</string>
+    <string name="to_add_all_the_files_in_the_current_directory_use_git_add_to_add_a_directory_use_git_add_directory"><![CDATA[To add all the files in the current directory, use git add . To add a directory use git add <directory>]]></string>
+
+    <string-array name="major_git_commands">
+        <item>add</item>
+        <item>cherry-pick</item>
+        <item>clone</item>
+        <item>commit</item>
+        <item>compare two commits</item>
+        <item>configure</item>
+        <item>debug</item>
+        <item>delete/remove</item>
+        <item>ignore</item>
+        <item>initialize</item>
+        <item>merge</item>
+        <item>rebase</item>
+        <item>recover</item>
+        <item>revert/reset</item>
+        <item>stash</item>
+    </string-array>
+
+    <string-array name="add_subcommands">
+        <item>new changes</item>
+        <item>a new branch</item>
+        <item>a new repo</item>
+        <item>alias</item>
+        <item>annotated tag</item>
+        <item>annotated tag for old commit</item>
+
+    </string-array>
+</resources>

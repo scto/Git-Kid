@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/git"
+            android:textAllCaps="false"
+            android:letterSpacing="0.08"
+            android:textSize="@dimen/_24sdp"
+            android:textColor="@color/app_black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"/>
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:src="@drawable/ic_github"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="@dimen/_35sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/command"
+            android:textAllCaps="false"
+            android:letterSpacing="0.08"
+
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold"
+            android:textColor="@color/card_blue"
+            android:fontFamily="sans-serif"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/card_blue"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/appViewLineBlue"
+        android:layout_height="@dimen/_4sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_above="@id/appViewLineBlue"
+        android:id="@+id/appBlackViewLine"
+        android:background="@color/app_black" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find the right commands you need without digging through the web."
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:gravity="left"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:letterSpacing="0.08"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I want to:"
+                android:textColor="@color/card_blue"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:gravity="left"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:letterSpacing="0.08"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/app_black"
+                android:id="@+id/spinnerMajorGitCommands"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:endIconTint="@color/card_blue"
+                app:boxStrokeWidthFocused="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteMajorGitCommands"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:text="@string/major_git_commands"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/app_black"
+                android:id="@+id/spinnerSubCommandOne"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:endIconTint="@color/card_blue"
+                app:boxStrokeWidthFocused="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/subCommandOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:text="@string/three_dot"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/app_black"
+                android:id="@+id/spinnerSubCommandTwo"
+                android:visibility="invisible"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:endIconTint="@color/card_blue"
+                app:boxStrokeWidthFocused="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/subCommandTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:text="@string/three_dot"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/usage"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardElevation="@dimen/_4sdp"
+                android:layout_height="@dimen/_50sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/black"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_width="@dimen/_11sdp"
+                        android:background="@color/card_blue"
+                        android:id="@+id/viewlineBlue"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_toEndOf="@id/viewlineBlue"
+                        android:fontFamily="@font/mono_regular"
+                        android:text="@string/git_checkout_b_new_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/note"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_22sdp"
+                app:cardElevation="@dimen/_4sdp"
+                android:layout_height="@dimen/_80sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/black"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/viewlineBlueTwo"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/card_blue" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_toEndOf="@id/viewlineBlueTwo"
+                        android:fontFamily="@font/mono_regular"
+                        android:gravity="left|top"
+                        android:text="@string/to_add_all_the_files_in_the_current_directory_use_git_add_to_add_a_directory_use_git_add_directory"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

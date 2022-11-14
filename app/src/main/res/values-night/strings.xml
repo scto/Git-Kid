@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="explorer">Explorer</string>
+    <string name="command">Command</string>
+    <string name="git">Git</string>
+    <string name="major_git_commands">Major Git Commands</string>
+    <string name="three_dot">...</string>
+    <string name="git_checkout_b_new_name"><![CDATA[git checkout -b <new name>]]></string>
+    <string name="note">Note</string>
+    <string name="usage">Usage</string>
+    <string name="to_add_all_the_files_in_the_current_directory_use_git_add_to_add_a_directory_use_git_add_directory"><![CDATA[To add all the files in the current directory, use git add . To add a directory use git add <directory>]]></string>
+</resources>
