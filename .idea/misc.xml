@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/card_background_rounded.xml" value="0.27685185185185185" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.33" />
         <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.4817658349328215" />
         <entry key="app/src/main/res/layout/dropdown_item_commands.xml" value="0.2" />

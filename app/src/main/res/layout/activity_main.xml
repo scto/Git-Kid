@@ -139,30 +139,15 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:boxStrokeColor="@color/app_black"
-                android:id="@+id/spinnerSubCommandTwo"
-                android:visibility="invisible"
-                app:boxStrokeWidth="@dimen/_1sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:endIconTint="@color/card_blue"
-                app:boxStrokeWidthFocused="@dimen/_2sdp"
-                android:layout_marginHorizontal="@dimen/_15sdp">
-
-                <AutoCompleteTextView
-                    android:id="@+id/subCommandTwo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="none"
-                    android:text="@string/three_dot"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:id="@+id/btnSubmit"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:text="@string/git_run"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/app_black"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -196,13 +181,14 @@
                         android:layout_height="match_parent"/>
 
                     <TextView
+                        android:id="@+id/tvCommandUsage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/_11sdp"
                         android:layout_toEndOf="@id/viewlineBlue"
                         android:fontFamily="@font/mono_regular"
-                        android:text="@string/git_checkout_b_new_name"
+
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14sdp"
                         android:textStyle="normal" />
@@ -232,6 +218,7 @@
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginBottom="@dimen/_22sdp"
+                android:alpha="0.1"
                 app:cardElevation="@dimen/_4sdp"
                 android:layout_height="@dimen/_80sdp">
                 <RelativeLayout
@@ -252,6 +239,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
+                        android:id="@+id/tvCommandNote"
                         android:layout_marginStart="@dimen/_11sdp"
                         android:layout_marginTop="@dimen/_8sdp"
                         android:layout_toEndOf="@id/viewlineBlueTwo"

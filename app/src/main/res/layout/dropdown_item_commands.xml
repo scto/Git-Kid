@@ -6,6 +6,7 @@
     android:layout_centerVertical="true"
     android:paddingVertical="@dimen/_9sdp"
     android:layout_toEndOf="@id/viewlineBlue"
+    android:singleLine="false"
     android:layout_marginStart="@dimen/_8sdp"
     android:fontFamily="@font/mono_regular"
     android:text="@string/git_checkout_b_new_name"

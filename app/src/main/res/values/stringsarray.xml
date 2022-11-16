@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string-array name="del_subcommands">-->
+<!--        <item>a branch</item>-->
+<!--        <item>multiple branches</item>-->
+<!--        <item>a tag</item>-->
+<!--        <item>remote</item>-->
+<!--        <item>untracked files</item>-->
+<!--        <item>files from index</item>-->
+<!--        <item>local branches that doesn't exist at remote</item>-->
+<!--        <item>files from old commits</item>-->
+<!--    </string-array>-->
+</resources>

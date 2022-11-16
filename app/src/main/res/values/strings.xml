@@ -5,9 +5,10 @@
     <string name="major_git_commands">Major Git Commands</string>
     <string name="three_dot">...</string>
     <string name="git_checkout_b_new_name"><![CDATA[git checkout -b <new name>]]></string>
-    <string name="note">Note</string>
+    <string name="note">Note (Disabled Feature)</string>
     <string name="usage">Usage</string>
     <string name="to_add_all_the_files_in_the_current_directory_use_git_add_to_add_a_directory_use_git_add_directory"><![CDATA[To add all the files in the current directory, use git add . To add a directory use git add <directory>]]></string>
+    <string name="git_run">Git Run !</string>
 
     <string-array name="major_git_commands">
         <item>add</item>
@@ -22,9 +23,10 @@
         <item>initialize</item>
         <item>merge</item>
         <item>rebase</item>
-        <item>recover</item>
+        <!--WILL ADD IN NEXT COMMIT RELEASE. :) -->
+       <!-- <item>recover</item>
         <item>revert/reset</item>
-        <item>stash</item>
+        <item>stash</item>-->
     </string-array>
 
     <string-array name="add_subcommands">
@@ -35,5 +37,71 @@
         <item>annotated tag</item>
         <item>annotated tag for old commit</item>
 
+    </string-array>
+    <string-array name="cherry_pick_subcommands">
+        <item>an commit from origin branch into my working branch</item>
+
+    </string-array>
+    <string-array name="clone_subcommands">
+        <item>existing repo into a new directory</item>
+        <item>existing repo into a current directory</item>
+        <item>existing repo along with submodules into the current directory</item>
+        <item>submodules after clone existing repo</item>
+    </string-array>
+    <string-array name="commit_subcommands">
+        <item>commit all local changes in tracked files</item>
+        <item>commit all local changes in tracked files</item>
+
+    </string-array>
+    <string-array name="compare_two_commits_subcommands">
+        <item>and output result in the terminal</item>
+        <item>and output result to a file</item>
+
+    </string-array>
+    <string-array name="configure_subcommands">
+        <item>name and email address</item>
+        <item>default editor</item>
+        <item>external diff tool</item>
+        <item>default diff tool</item>
+        <item>color</item>
+        <item>add the GPG Key</item>
+
+    </string-array>
+    <string-array name="debug_commands">
+        <item>binary search</item>
+        <item>who modified each files</item>
+        <item>search in files</item>
+    </string-array>
+    <string-array name="del_subcommands">
+        <item>a branch</item>
+        <item>multiple branches</item>
+        <item>a tag</item>
+        <item>remote</item>
+        <item>untracked files</item>
+        <item>files from index</item>
+        <item>local branches that does not exist at remote</item>
+        <item>files from old commits</item>
+    </string-array>
+    <string-array name="ignore_subcommands">
+        <item>all files in a directory</item>
+        <item>all files of a specific type</item>
+    </string-array>
+    <string-array name="initialize_subcommands">
+        <item>a new repository</item>
+    </string-array>
+    <string-array name="merge_subcommands">
+        <item>another branch to current branch</item>
+        <item>merge a single file from one branch to another</item>
+    </string-array>
+    <string-array name="modify_subcommands">
+        <item>my last or latest commit message</item>
+        <item>my last commit but leave the commit message</item>
+        <item>repos remote url</item>
+    </string-array>
+    <string-array name="rebase_subcommands">
+        <item>an origin branch into my working branch</item>
+        <item>a local branch into my working branch</item>
+        <item>and skip a commit</item>
+        <item>and continue after resolving conflicts</item>
     </string-array>
 </resources>
